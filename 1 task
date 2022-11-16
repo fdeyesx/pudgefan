@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c ;
+
+    cout << "Enter 1st cathet:" ;
+    cin >> a ; 
+
+    cout << "Enter 2nd cathet:" ;
+    cin >> b ; 
+
+    cout << "Enter hypotenuse:" ;
+    cin >> c ; 
+
+    int square_triagle = (a * b)/2 ;
+    cout << "Total square by using cathets is " << square_triagle << endl ;
+
+    return 0;
+}
