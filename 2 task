@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int first_cost, second_cost, third_cost, forth_cost ;
+
+    cout << "Enter the price of first product:" ;
+    cin >> first_cost ;
+
+    cout << "Enter the price of second product:" ;
+    cin >> second_cost ; 
+
+    cout << "Enter the price of third product:" ;
+    cin >> third_cost ;
+
+    cout << "Enter the price of forth product:" ;
+    cin >> forth_cost ;
+
+    int full_cost = (first_cost + second_cost + third_cost + forth_cost) ; 
+    cout << "Total price is " << full_cost << endl;
+
+    return 0;
+}
