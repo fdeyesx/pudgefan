@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    int a, b, c ;
+
+    cout << "Enter 1st side:" ;
+    cin >> a ; 
+
+    cout << "Enter 2nd side:" ;
+    cin >> b ; 
+
+    cout << "Enter 3rd side:" ;
+    cin >> c ; 
+
+    int perimeter_triagle = a + b + c;
+    int p = perimeter_triagle / 2 ;
+    int partly_square_triagle = (p * (p-a) * (p-b) * (p-c));
+    // well, in this line we should to have a command of square root extraction but i dont know how it writes. (we count the sqaure using geron's formula.)
+    cout << "Total square is " << square_triagle << " and total perimeter is " << perimeter_triagle << endl ;
+
+    return 0;
+}
