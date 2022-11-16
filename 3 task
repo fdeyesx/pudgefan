@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char first_letter_ch;
+
+    cout << "Enter your first name uppercase letter (full name): " ;
+    cin >> first_letter_ch;
+
+    int birth_year, birth_day, person_year;
+
+    cout << "Enter the year when you were born: ";
+    cin >> birth_year;
+
+    cout << "Enter the day when you were born, not a month: ";
+    cin >> birth_day;
+
+    cout << "Enter how old you are: ";
+    cin >> person_year;
+
+    int person_number = (first_letter_ch + birth_year - birth_day) / person_year ; 
+    cout << "Your person number is " << person_number << endl;
+
+    return 0;
+}
