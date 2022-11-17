@@ -17,8 +17,7 @@ int main() {
     int perimeter_triagle = a + b + c;
     int p = perimeter_triagle / 2 ;
     int partly_square_triagle = (p * (p-a) * (p-b) * (p-c));
-    // well, in this line we should to have a command of square root extraction but i dont know how it writes. (we count the sqaure using geron's formula.)
-    cout << "Total square is " << square_triagle << " and total perimeter is " << perimeter_triagle << endl ;
+    cout << "Total perimeter is " << perimeter_triagle << " and total square is "  << std :: sqrt(partly_square_triagle) << std::endl;
 
-    return 0;
+    return 0;   
 }
