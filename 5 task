@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    int a, b, c ;
+
+    cout << "Enter 1st side:" ;
+    cin >> a ; 
+
+    cout << "Enter 2nd side:" ;
+    cin >> b ; 
+
+    cout << "Enter 3rd side:" ;
+    cin >> c ; 
+
+    int perimeter_triagle = a + b + c;
+    int p = perimeter_triagle / 2 ;
+    int partly_square_triagle = (p * (p-a) * (p-b) * (p-c));
+    cout << "Total perimeter is " << perimeter_triagle << " and total square is "  << std :: sqrt(partly_square_triagle) << std::endl;
+
+    return 0;   
+}
