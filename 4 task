@@ -1,0 +1,17 @@
+#include <iostream>
+#include <tgmath.h>
+using namespace std;
+
+int main() {
+    float entered_number;
+
+    cout << "Enter fractional number: ";
+    cin >> entered_number;
+
+    float enter_number_partly = (int)entered_number;
+
+    float fractional_part = (entered_number - enter_number_partly);
+    cout << "The fractional part of a number is " << fractional_part << endl;
+
+    return 0;   
+}
