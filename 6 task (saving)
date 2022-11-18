@@ -1,0 +1,38 @@
+#include <iostream>
+#include <tgmath.h>
+using namespace std;
+
+int main() {
+    float x1, y1, x2, y2, x3, y3 ;
+
+    cout << "Enter x of 1st point:" ;
+    cin >> x1 ; 
+
+    cout << "Enter y of 1st point:" ;
+    cin >> y1 ; 
+
+    cout << "Enter x of 2nd point:" ;
+    cin >> x2 ; 
+
+    cout << "Enter y of 2nd point:" ;
+    cin >> y1 ; 
+
+    cout << "Enter x of 3rd point:" ;
+    cin >> x3 ; 
+
+    cout << "Enter y of 3rd point:" ;
+    cin >> y3 ; 
+
+    float first_side_partly =  (sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2)));
+
+    float second_side_partly = (sqrt(pow(x2 - x3, 2) + pow(y2 - y3, 2)));
+
+    float third_side_partly = (sqrt(pow(x3 - x1, 2) + pow(y3 - y1, 2)));
+
+    float perimeter_triagle = (first_side_partly + second_side_partly + third_side_partly);
+    float p = perimeter_triagle / 2 ; 
+    float partly_square_triagle = (p * (p - first_side_partly) * (p - second_side_partly) * (p - third_side_partly));
+    cout <<  "Length of 1st side is " << first_side_partly << ", length of 2nd side -" << second_side_partly << ", length of 3rd side - " << third_side_partly << " and total square is "  << std :: sqrt(partly_square_triagle) << std::endl;
+
+    return 0;
+}
